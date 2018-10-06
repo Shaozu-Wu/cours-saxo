@@ -95,7 +95,7 @@
                     <a href="#blog" class="nav-link p-0">Blog</a>
                   </li> -->
                   <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#tarifs" class="nav-link p-0">Tarifs</a>
+                    <a href="#tarifs" class="nav-link p-0">Tarif</a>
                   </li>
                   <li class="nav-item g-ml-15--lg">
                     <a href="#contact" class="nav-link p-0">Contact</a>
@@ -176,15 +176,15 @@
     	<!-- End Section Content -->
 
 
-      <div class="row">
+      <div class="row g-height-1000">
         <!-- Section Content -->
         <section id="gallery" class="g-py-100 g-bg-gray-light-v5 g-bg- col-md-6 float-left">
           <div class="container text-center g-width-850 g-mb-65">
             <div class="u-heading-v2-2--bottom g-brd-primary g-mb-30">
               <h2 class="text-uppercase u-heading-v2__title g-line-height-1 g-font-weight-700 g-font-size-30 g-font-size-40--md g-mb-0">Gallerie</h2>
             </div>
-            <p class="mb-0 text-left g-color- g-font-weight-">Voici quelques partitions de gammes spécialement conçues pour le saxophone en téléchargement gratuit.
-            <br>Elles vous permettront de chauffer votre instrument et acquérir les bases nécessaires aux nombreux morceaux et improvisations.</p>
+            <p class="mb-0 text-left g-color- g-font-weight-">
+            <br>Ces gammes vous permettront de chauffer votre instrument et d'acquérir les bases nécessaires aux nombreux morceaux et improvisations.</p>
           </div>
 
           <div class="container g-width-560 g-mb-20 g-mb-0--md">
@@ -210,26 +210,25 @@
               <div class="tab-pane fade show active" id="gammes_majeures" role="tabpanel">
                 <div class="js-carousel g-line-height-0 g-pb-40"
                      data-slides-scroll="6"
-                     data-rows="2"
+                     data-rows="1"
                      data-slides-show="6"
-                     data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-0 text-center"
                      data-responsive='[{
                        "breakpoint": 1200,
                        "settings": {
-                         "slidesToShow": 6,
-                         "slidesToScroll": 6
+                         "slidesToShow": 3,
+                         "slidesToScroll": 3
                        }
                      }, {
                        "breakpoint": 992,
                        "settings": {
-                         "slidesToShow": 5,
-                         "slidesToScroll": 5
+                         "slidesToShow": 2,
+                         "slidesToScroll": 2
                        }
                      }, {
                        "breakpoint": 768,
                        "settings": {
-                         "slidesToShow": 3,
-                         "slidesToScroll": 3
+                         "slidesToShow": 2,
+                         "slidesToScroll": 2
                        }
                      }, {
                        "breakpoint": 576,
@@ -302,177 +301,228 @@
         <!-- End Section Content -->
         <!-- Section Content -->
         <section id="musicList" class=" g-bg-gray-light-v5 g-bg- g-py-100 col-md-6 float-right">
-          <div class="container text-center g-width-780 g-mb-65">
+          <!-- <div class="container text-center g-width-780 g-mb-65">
             <div class="u-heading-v2-2--bottom g-brd-primary">
               <h2 class="text-uppercase u-heading-v2__title g-line-height-1 g-font-weight-700 g-font-size-30 g-font-size-40--md mb-0">Extraits</h2>
             </div>
+          </div> -->
+
+          <div class="container g-width-560 g-mb-20 g-mb-0--md">
+            <!-- Nav tabs -->
+            <ul class="nav justify-content-center text-uppercase u-nav-v5-3 u-nav-primary g-line-height-1_4 g-font-weight-700 g-font-size-default g-brd-bottom--md g-brd- g-mb-60--md" role="tablist"
+                data-target="galleryTabs"
+                data-tabs-mobile-type="slide-up-down"
+                data-btn-classes="btn btn-md btn-block text-uppercase u-btn-outline-primary g-font-weight-700">
+              <li class="nav-item">
+                <a class="nav-link g-theme-color-gray-dark-v1 g-color- g-color-primary--hover g-font-weight-700 g-font-size-20 active" data-toggle="tab" href="#extraits" role="tab">Extraits Musicaux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link g-theme-color-gray-dark-v1 g-color- g-color-primary--hover g-font-weight-700 g-font-size-20" data-toggle="tab" href="#gammesRecord" role="tab">Gammes</a>
+              </li>
+            </ul>
+            <!-- End Nav tabs -->
           </div>
 
-          <div class="js-carousel container u-bg-overlay__inner g-pb-140"
-             data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-40 text-center">
             <div class="container">
-              <div id="musicListAccordion" class="text-uppercase u-accordion" role="tablist" aria-multiselectable="true">
-                <!-- Card -->
-                <div class="card g-brd-none rounded-0 g-mb-1">
-                  <div id="musicListAccordionHeading1" class="u-accordion__header g-pa-0" role="tab">
-                    <div class="w-100 d-md-table g-color-gray-dark-v5"
-                         role="button"
-                         data-target="#musicListAccordionBody1"
-                         data-toggle="collapse"
-                         aria-expanded="true"
-                         aria-controls="musicListAccordionBody1">
-                      <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
-                        <!-- Track Num -->
-                        <div class="d-inline-block g-mr-20">1.</div>
-                        <!-- End Track Num -->
+              <div class="tab-pane fade show active" id="extraits" role="tabpanel">
+                <div id="musicListAccordion1" class="text-uppercase u-accordion" role="tablist" aria-multiselectable="true">
+                  <!-- Card -->
+                  <div class="card g-brd-none rounded-0 g-mb-1">
+                    <div id="musicListAccordionHeading1" class="u-accordion__header g-pa-0" role="tab">
+                      <div class="w-100 d-md-table g-color-gray-dark-v5"
+                           role="button"
+                           data-target="#musicListAccordionBody1"
+                           data-toggle="collapse"
+                           aria-expanded="true"
+                           aria-controls="musicListAccordionBody1">
+                        <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                          <!-- Track Num -->
+                          <div class="d-inline-block g-mr-20">1.</div>
+                          <!-- End Track Num -->
 
-                        <!-- Track Avatar -->
-                        <img class="d-inline-block g-mr-25" src="assets/img/PanthereRose-small.jpg" alt="Image Description">
-                        <!-- End Track Avatar -->
-                        <!-- Track Title -->
-                        <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Panthère rose</h6>
-                        <!-- End Article Title -->
+                          <!-- Track Avatar -->
+                          <img class="d-inline-block g-mr-25" src="assets/img/PanthereRose-small.jpg" alt="Image Description">
+                          <!-- End Track Avatar -->
+                          <!-- Track Title -->
+                          <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Panthère rose</h6>
+                          <!-- End Article Title -->
+                        </div>
+
+                        <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Jazz</div>
                       </div>
-
-                      <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Jazz</div>
-
-                      <div class="d-md-table-cell g-hidden-md-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">00:29</div>
-
-                      <!-- Track Price -->
-                      <!-- <div class="d-md-table-cell g-hidden-sm-down g-valign-middle g-width-140 g-px-20 g-py-5">
-                        Only <strong class="g-color-black">$0.99</strong>
-                      </div> -->
-                      <!-- End Track Price -->
-
-                      <!-- Buy Track -->
-                      <!-- <div class="text-md-right d-md-table-cell g-valign-middle g-width-140--md g-pa-20">
-                        <a href="#!" class="btn btn-xl rounded-0 w-100 u-btn-primary g-font-weight-700 g-font-size-12">Buy Now
-                          <strong class="g-hidden-md-up">– $0.99</strong></a>
-                      </div> -->
-                      <!-- End Buy Track -->
                     </div>
-                  </div>
 
-                  <div id="musicListAccordionBody1" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading1"
-                       data-parent="#musicListAccordion">
-                    <div class="u-accordion__body p-0">
-                      <div class="u-audio-v2 g-bg-black-opacity-0_5">
-                        <audio class="js-audio" controls>
-                          <source src="assets/audio/panthere_rose.mp3" type="audio/mp3">
-                        </audio>
+                    <div id="musicListAccordionBody1" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading1"
+                         data-parent="#musicListAccordion">
+                      <div class="u-accordion__body p-0">
+                        <div class="u-audio-v2 g-bg-black-opacity-0_5">
+                          <audio class="js-audio" controls>
+                            <source src="assets/audio/panthere_rose.mp3" type="audio/mp3">
+                          </audio>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <div class="card g-brd-none rounded-0 g-mb-1">
+                    <div id="musicListAccordionHeading2" class="u-accordion__header g-pa-0" role="tab">
+                      <div class="collapsed w-100 d-md-table g-color-gray-dark-v5"
+                           role="button"
+                           data-target="#musicListAccordionBody2"
+                           data-toggle="collapse"
+                           aria-expanded="false"
+                           aria-controls="musicListAccordionBody2">
+                        <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                          <!-- Track Num -->
+                          <div class="d-inline-block g-mr-20">2.</div>
+                          <!-- End Track Num -->
+
+                          <!-- Track Avatar -->
+                          <img class="d-inline-block g-mr-25" src="assets/img-found/dmitry_shostakovich_rian_00137316_b-38.jpg" alt="Image Description">
+                          <!-- End Track Avatar -->
+                          <!-- Track Title -->
+                          <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0 g-width-200">Valse #2 Chostakovitch</h6>
+                          <!-- End Article Title -->
+                        </div>
+
+                        <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Classique</div>
+                      </div>
+                    </div>
+
+                    <div id="musicListAccordionBody2" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading2"
+                         data-parent="#musicListAccordion">
+                      <div class="u-accordion__body p-0">
+                        <div class="u-audio-v2 g-bg-black-opacity-0_5">
+                          <audio class="js-audio" controls>
+                            <source src="assets/audio/valse_2_chostakovitch.mp3" type="audio/mp3">
+                          </audio>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <div class="card g-brd-none rounded-0 g-mb-1">
+                    <div id="musicListAccordionHeading3" class="u-accordion__header g-pa-0" role="tab">
+                      <div class="w-100 d-md-table g-color-gray-dark-v5"
+                           role="button"
+                           data-target="#musicListAccordionBody3"
+                           data-toggle="collapse"
+                           aria-expanded="true"
+                           aria-controls="musicListAccordionBody3">
+                        <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                          <!-- Track Num -->
+                          <div class="d-inline-block g-mr-20">3.</div>
+                          <!-- End Track Num -->
+
+                          <!-- Track Avatar -->
+                          <img class="d-inline-block g-mr-25" src="assets/img-found/sidney_bechet_pcd-38.jpg" alt="Image Description">
+                          <!-- End Track Avatar -->
+                          <!-- Track Title -->
+                          <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Petite Fleur</h6>
+                          <!-- End Article Title -->
+                        </div>
+
+                        <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Blues</div>
+                    </div>
+
+                    <div id="musicListAccordionBody3" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading3"
+                         data-parent="#musicListAccordion">
+                      <div class="u-accordion__body p-0">
+                        <div class="u-audio-v2 g-bg-black-opacity-0_5">
+                          <audio class="js-audio" controls>
+                            <source src="assets/audio/petite_fleur.mp3" type="audio/mp3">
+                          </audio>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card -->
+
+                  <!-- Card -->
+                  <div class="card g-brd-none rounded-0 g-mb-1">
+                    <div id="musicListAccordionHeading4" class="u-accordion__header g-pa-0" role="tab">
+                      <div class="w-100 d-md-table g-color-gray-dark-v5"
+                           role="button"
+                           data-target="#musicListAccordionBody4"
+                           data-toggle="collapse"
+                           aria-expanded="true"
+                           aria-controls="musicListAccordionBody4">
+                        <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                          <!-- Track Num -->
+                          <div class="d-inline-block g-mr-20">4.</div>
+                          <!-- End Track Num -->
+
+                          <!-- Track Avatar -->
+                          <img class="d-inline-block g-mr-25" src="assets/img-found/tequila_the_champs-38.jpg" alt="Image Description">
+                          <!-- End Track Avatar -->
+                          <!-- Track Title -->
+                          <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Tequila</h6>
+                          <!-- End Article Title -->
+                        </div>
+
+                        <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Rock</div>
+                    </div>
+
+                    <div id="musicListAccordionBody4" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading4"
+                         data-parent="#musicListAccordion">
+                      <div class="u-accordion__body p-0">
+                        <div class="u-audio-v2 g-bg-black-opacity-0_5">
+                          <audio class="js-audio" controls>
+                            <source src="assets/audio/tequila.mp3" type="audio/mp3">
+                          </audio>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Card -->
                 </div>
-                <!-- End Card -->
+              </div>
 
-                <!-- Card -->
-                <div class="card g-brd-none rounded-0 g-mb-1">
-                  <div id="musicListAccordionHeading2" class="u-accordion__header g-pa-0" role="tab">
-                    <div class="collapsed w-100 d-md-table g-color-gray-dark-v5"
-                         role="button"
-                         data-target="#musicListAccordionBody2"
-                         data-toggle="collapse"
-                         aria-expanded="false"
-                         aria-controls="musicListAccordionBody2">
-                      <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
-                        <!-- Track Num -->
-                        <div class="d-inline-block g-mr-20">2.</div>
-                        <!-- End Track Num -->
+              <div class="tab-pane fade show active" id="gammesRecord" role="tabpanel">
+                <div id="musicListAccordion2" class="text-uppercase u-accordion" role="tablist" aria-multiselectable="true">
+                  <!-- Card -->
+                  <div class="card g-brd-none rounded-0 g-mb-1">
+                    <div id="musicListAccordionHeading5" class="u-accordion__header g-pa-0" role="tab">
+                      <div class="w-100 d-md-table g-color-gray-dark-v5"
+                           role="button"
+                           data-target="#musicListAccordionBody5"
+                           data-toggle="collapse"
+                           aria-expanded="true"
+                           aria-controls="musicListAccordionBody5">
+                        <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
+                          <!-- Track Num -->
+                          <div class="d-inline-block g-mr-20">5.</div>
+                          <!-- End Track Num -->
 
-                        <!-- Track Avatar -->
-                        <img class="d-inline-block g-mr-25" src="assets/img-found/dmitry_shostakovich_rian_00137316_b-38.jpg" alt="Image Description">
-                        <!-- End Track Avatar -->
-                        <!-- Track Title -->
-                        <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Valse #2 Chostakovitch</h6>
-                        <!-- End Article Title -->
+                          <!-- Track Avatar -->
+                          <img class="d-inline-block g-mr-25" src="assets/img-found/take-five-cbs-38.jpg" alt="Image Description">
+                          <!-- End Track Avatar -->
+                          <!-- Track Title -->
+                          <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Take Five</h6>
+                          <!-- End Article Title -->
+                        </div>
+
+                        <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Jazz</div>
                       </div>
-
-                      <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Classique</div>
-
-                      <div class="d-md-table-cell g-hidden-md-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">00:42</div>
-
-                      <!-- Track Price -->
-                      <!-- <div class="d-md-table-cell g-hidden-sm-down g-valign-middle g-width-140 g-px-20 g-py-5">
-                        Only <strong class="g-color-black">$1.49</strong>
-                      </div> -->
-                      <!-- End Track Price -->
-
-                      <!-- Buy Track -->
-                      <!-- <div class="text-md-right d-md-table-cell g-valign-middle g-width-140--md g-pa-20">
-                        <a href="#!" class="btn btn-xl rounded-0 w-100 u-btn-primary g-font-weight-700 g-font-size-12">Buy Now
-                          <strong class="g-hidden-md-up">– $1.49</strong></a>
-                      </div> -->
-                      <!-- End Buy Track -->
                     </div>
-                  </div>
 
-                  <div id="musicListAccordionBody2" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading2"
-                       data-parent="#musicListAccordion">
-                    <div class="u-accordion__body p-0">
-                      <div class="u-audio-v2 g-bg-black-opacity-0_5">
-                        <audio class="js-audio" controls>
-                          <source src="assets/audio/valse_2_chostakovitch.mp3" type="audio/mp3">
-                        </audio>
+                    <div id="musicListAccordionBody5" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading5"
+                         data-parent="#musicListAccordion">
+                      <div class="u-accordion__body p-0">
+                        <div class="u-audio-v2 g-bg-black-opacity-0_5">
+                          <audio class="js-audio" controls>
+                            <source src="assets/audio/take_five.mp3" type="audio/mp3">
+                          </audio>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <!-- End Card -->
                 </div>
-                <!-- End Card -->
-
-                <!-- Card -->
-                <div class="card g-brd-none rounded-0 g-mb-1">
-                  <div id="musicListAccordionHeading1" class="u-accordion__header g-pa-0" role="tab">
-                    <div class="w-100 d-md-table g-color-gray-dark-v5"
-                         role="button"
-                         data-target="#musicListAccordionBody1"
-                         data-toggle="collapse"
-                         aria-expanded="true"
-                         aria-controls="musicListAccordionBody1">
-                      <div class="clearfix d-md-table-cell g-valign-middle g-pa-20">
-                        <!-- Track Num -->
-                        <div class="d-inline-block g-mr-20">3.</div>
-                        <!-- End Track Num -->
-
-                        <!-- Track Avatar -->
-                        <img class="d-inline-block g-mr-25" src="assets/img-found/sidney_bechet_pcd-38.jpg" alt="Image Description">
-                        <!-- End Track Avatar -->
-                        <!-- Track Title -->
-                        <h6 class="d-inline-block g-font-size-13 g-font-weight-700 g-color-black mb-0">Petite Fleur</h6>
-                        <!-- End Article Title -->
-                      </div>
-
-                      <div class="d-md-table-cell g-hidden-sm-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">Blues</div>
-
-                      <div class="d-md-table-cell g-hidden-md-down g-font-weight-700 g-valign-middle g-width-100 g-px-20 g-py-5">00:26</div>
-
-                      <!-- Track Price -->
-                      <!-- <div class="d-md-table-cell g-hidden-sm-down g-valign-middle g-width-140 g-px-20 g-py-5">
-                        Only <strong class="g-color-black">$0.99</strong>
-                      </div> -->
-                      <!-- End Track Price -->
-
-                      <!-- Buy Track -->
-                      <!-- <div class="text-md-right d-md-table-cell g-valign-middle g-width-140--md g-pa-20">
-                        <a href="#!" class="btn btn-xl rounded-0 w-100 u-btn-primary g-font-weight-700 g-font-size-12">Buy Now
-                          <strong class="g-hidden-md-up">– $0.99</strong></a>
-                      </div> -->
-                      <!-- End Buy Track -->
-                    </div>
-                  </div>
-
-                  <div id="musicListAccordionBody1" class="collapse show g-bg-gray-dark-v1 g-color-white" role="tabpanel" aria-labelledby="musicListAccordionHeading1"
-                       data-parent="#musicListAccordion">
-                    <div class="u-accordion__body p-0">
-                      <div class="u-audio-v2 g-bg-black-opacity-0_5">
-                        <audio class="js-audio" controls>
-                          <source src="assets/audio/petite_fleur.mp3" type="audio/mp3">
-                        </audio>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card -->
 
               </div>
             </div>
@@ -589,56 +639,36 @@
       </section>
       <!-- End Section Content -->
 
-
       <!-- Section Content -->
-      <!-- <section id="twitterFeeds" class="u-bg-overlay g-bg-img-hero g-bg-attachment-fixed g-bg-black-opacity-0_6--after g-pt-100" style="background-image: url(assets/img-temp/1900x645/img2.jpg);">
-        <div class="js-carousel container u-bg-overlay__inner g-pb-120"
+      <section id="tarifs" class=" g-height-600 u-bg-overlay g-bg-img-hero g-bg-attachment-fixed g-bg-black-opacity-0_6--after g-pt-100" style="background-image: url(assets/img-free/vinyl-million-wallpapers.com_1440x900.jpg);background-size: auto;">
+        <div class="container u-bg-overlay__inner g-pb-120"
              data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-60 text-center">
-          <div class="js-slide">
+          <div class="container text-center g-width-780 g-mb-65">
+            <div class="g-mb-50 u-heading-v2-2--bottom g-brd-primary">
+              <h2 class="text-uppercase u-heading-v2__title g-line-height-1 g-font-weight-700 g-font-size-30 g-font-size-40--md g-color-white g-mb-0">Tarif</h2>
+            </div>
             <div class="container text-center g-max-width-670">
               <div class="d-inline-block g-mb-25">
-                <a class="media g-color-white g-color-primary--hover" href="#!">
+                <a class="media g-color-white g-color-primary--hover">
                   <div class="d-flex g-mr-20">
-                    <img class="g-brd-around g-brd-3 g-brd-white-opacity-0_3 g-rounded-50x" src="assets/img-temp/50x50/img1.jpg" alt="Image descrition">
+                    <img src="assets/img-found/tarifs/15euros-small.png" alt="Image descrition">
                   </div>
 
                   <div class="media-body align-self-center">
-                    <strong class="text-uppercase g-font-size-13">@unify</strong>
+                    <strong class="g-font-size-20 g-color-yellow">15€ pour le cours d'une heure.</strong>
                   </div>
                 </a>
               </div>
 
-              <blockquote class="g-line-height-1_6 g-font-weight-600 g-font-size-22 g-font-size-27--md g-color-white g-mb-30">In eu augue massa. Phasellus
-                <a class="g-color-primary" href="#!">#rutrum</a>
-                velit diam, quis pellentesque libero hendrerit a.
+              <blockquote class="g-line-height-1_6 g-font-weight-600 g-font-size-22 g-font-size-27--md g-color-white g-mb-30">Chèques emploi service acceptés. 
+                <a class="g-color-primary" href="https://www.cesu.urssaf.fr/info/accueil.html"> #CESU</a>
               </blockquote>
-              <em class="g-color-white-opacity-0_7 g-font-style-normal">12:35 Pm, June 12, 2017</em>
+              <em class="g-color-white-opacity-0_6 g-font-style-normal">Saxophone Alto disponible pour débutants.</em>
             </div>
           </div>
 
-          <div class="js-slide">
-            <div class="container text-center g-max-width-670">
-              <div class="d-inline-block g-mb-25">
-                <a class="media g-color-white g-color-primary--hover" href="#!">
-                  <div class="d-flex g-mr-20">
-                    <img class="g-brd-around g-brd-3 g-brd-white-opacity-0_3 g-rounded-50x" src="assets/img-temp/50x50/img1.jpg" alt="Image descrition">
-                  </div>
-
-                  <div class="media-body align-self-center">
-                    <strong class="text-uppercase g-font-size-13">@unify</strong>
-                  </div>
-                </a>
-              </div>
-
-              <blockquote class="g-line-height-1_6 g-font-weight-600 g-font-size-22 g-font-size-27--md g-color-white g-mb-30">In eu augue massa. Phasellus
-                <a class="g-color-primary" href="#!">#rutrum</a>
-                velit diam, quis pellentesque libero hendrerit a.
-              </blockquote>
-              <em class="g-color-white-opacity-0_7 g-font-style-normal">12:35 Pm, June 12, 2017</em>
-            </div>
-          </div>
         </div>
-      </section> -->
+      </section>
       <!-- End Section Content -->
 
       <!-- Section Content -->
@@ -648,8 +678,7 @@
             <h2 class="text-uppercase u-heading-v2__title g-line-height-1 g-font-weight-700 g-font-size-30 g-font-size-40--md g-mb-0">Contact</h2>
           </div>
 
-          <p class="g-mb-65">Fonctionnant essentiellement par téléphone, merci de laisser votre numéro avec votre message.</p>
-
+          <!-- <p class="g-mb-65">Fonctionnant essentiellement par téléphone, merci de laisser votre numéro avec votre message.</p>
           <form>
             <div class="row">
               <div class="col-md-6 form-group g-mb-30">
@@ -672,7 +701,25 @@
             <div class="text-left">
               <button class="btn u-btn-primary btn-lg text-uppercase g-font-weight-700 g-font-size-12 rounded-2 g-px-25 g-py-15 mb-0" type="submit" role="button">Envoyer</button>
             </div>
-          </form>
+          </form> -->
+
+          <div class="row">
+            <p class="float-left g-color-gray-dark-v4">
+              <div class="g-pt-100 g-font-size-20 g-font-weight-700">Olivier Lefrançois
+                <br>Tel : 04 72 33 65 54
+                <div class="g-font-size-18 g-font-weight-500">4 rue Etienne Richerand, 69003 Lyon.</div>
+              </div>
+            </p>
+
+            <div class="col-md-6 ml-auto mapouter">
+              <div class="gmap_canvas">
+                <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=4%20rue%20Etienne%20Richerand%2C%2069003%20Lyon.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a>
+              </div>
+              <style>.mapouter{text-align:right;height:400px;width:400px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;}
+              </style>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Section Content -->
